@@ -9,6 +9,7 @@ app.get('/ping', (req, res) => {
 });
 
 app.get('/hello-world', (req, res) => {
+  console.log('---terminal: ', req.query.count)
   return res.send('hello-world');
 });
 
